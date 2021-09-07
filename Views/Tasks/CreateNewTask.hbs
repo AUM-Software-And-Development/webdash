@@ -1,0 +1,45 @@
+<h3>Write a new task</h3>
+<div class="row">
+   <form action="/" method="post" class="col s12">
+
+   <div class="row">
+      <div class="input-field">
+         <input type="text" id="Task" name="Task">
+         <label for="Task">Task</label>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="input-field">
+         <input type="text" id="Meaning" name="Meaning">
+         <label for="Meaning">Meaning</label>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="input-field">
+         <select id="Visibility" name="Visibility">
+            <option value="Private" selected>Private</option>
+            <option value="Public">Public</option>
+         </select>
+         <label for="Visibility">Visibility</label>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="input-field">
+         <select id="Completion" name="Completion">
+            <option value="Incomplete" selected>Incomplete</option>
+            <option value="Complete">Complete</option>
+         </select>
+         <label for="Visibility">Completion</label>
+      </div>
+   </div>
+
+   <div class="row">
+      <input type="submit" value="Record" class="btn red">
+      <a href="/dashboard" class="btn black">Cancel</a>
+   </div>
+
+   </form>
+</div>

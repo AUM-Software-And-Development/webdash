@@ -1,0 +1,60 @@
+<h6>
+   Welcome {{CurrentFirstName}}. These are the tasks that you wrote.
+</h6>
+
+<h3>
+   <i class="fas fa-book-reader">
+   </i>
+   <p>
+      Tasks that I need to do
+   </p>
+</h3>
+
+<div class="section">
+
+   <p class="lead">
+      Public tasks:
+   </p>
+   <br>
+
+   <div class="divider">
+   </div>
+
+   {{#if tasksFromTable}}
+
+   <table class="striped">
+      <thead>
+         <tr>
+            <th>Task</th>
+            <th>Meaning</th>
+            <th>Visibility</th>
+            <th>Date</th>
+            <th>Completion</th>
+            <th>CompletionDate</th>
+            <th></th>
+         </tr>
+      </thead>
+      <tbody>
+         {{#each tasksFromTable}}
+            <tr>
+               <td><a href="/Tasks/{{_id}}"></a>{{Task}}</td>
+               <td>{{Meaning}}</td>
+               <td>{{Visibility}}</td>
+               <td>{{Date}}</td>
+               <td>{{Completion}}</td>
+               <td>{{CompletionDate}}</td>
+            </tr>
+         {{/each}}
+      </tbody>
+   </table>
+
+   {{else}}
+
+   <br>
+   <p>
+      There are no tasks written.
+   </p>
+   
+   {{/if}}
+
+</div>

@@ -1,0 +1,15 @@
+div.dashboard-container {
+   width: 999px;
+   margin-top: 72.9px;
+   text-align: center;
+}
+
+div.editing-container {
+   width: 999px;
+   margin-top: 72.9px;
+   text-align: center;
+}
+
+p.dashboard-layout {
+   margin: 9px 0 !important;
+}
